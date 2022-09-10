@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font */
+.zen-maru{
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+/* 共通 */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: #002f79;
+  text-align: left;
+  font-weight: 500;
+  
+}
+li {
+  list-style: none;
+}
+
+/*====== header ======*/
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  height: 120px;
+  z-index: 10;
+  background-color: #fff;
+}
+.header_inner{
+  margin: 25px auto;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_header{
+  column-gap: 60px;
+}
+.logo_header img{
+  width: 274px;
+}
+.header-nav{
+  display: flex;
+  gap: 60px;
+
+}
+.header-nav_align{
+  text-align: center;
+}
+.header-nav_icon{
+  display: inline-block;
+  width: 50px;
+}
+
+
+
+/*======= main ======= */
+#container{
+  margin: 80px 0;
+  background-color: #fff;
+}
+.main-wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+
+
+/*====== footer ======*/
+
+
+/*====== footer ======*/
+
+/* PC */
+@media screen and (min-width: 960px), print {
+
+}

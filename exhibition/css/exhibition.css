@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+  scroll-behavior: smooth;
+}
+/* font */
+.zen-maru{
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+.yu-gothic{
+  font-family :YuMincho,'Yu Mincho',serif;
+}
+body {
+  color: #ffffff;
+  text-align: left;
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+a {
+	transition: 0.3s;
+	text-decoration: none;
+  cursor: pointer;
+}
+.top-page{
+  color: #333;
+}
+
+
+
+/*======= main ======= */
+#container{
+  width: 100%;
+  background: linear-gradient(to bottom, #041172 0%,#024BCB 30%, #017FC2 50%,#017687 70%, #026D5B 100%);
+  background-size: 100%;
+  padding-bottom: 150px;
+}
+.ex-title_inner{
+  text-align: center;
+  padding: 300px 0 150px 0;
+}
+.ex-title{
+  font-weight: 100;
+  font-size: 5.0rem;
+  letter-spacing: 8px;
+}
+.ex-title_inner p{
+  font-size: 4.0rem;
+  font-weight: 100;
+}
+
+
+
+
+
+/* --------- contents --------- */
+.ex-contents_inner{
+  margin-top: 200px;
+}
+.ex-solid_grid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.ex-contents_textarea{
+  width: 50%;
+  padding-right: 100px;
+  margin-left: 100px;
+}
+.left{
+  padding-left: 50px;
+}
+.right{
+  padding-right: 50px;
+}
+.ex-contents_textarea h2{
+  font-size: 5.0rem;
+  font-weight: 500;
+}
+.ex-sub_title{
+  padding-top: 10px;
+  font-size: 3.0rem;
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+.ex-sub_text{
+  padding-top: 30px;
+  line-height: 2.0;
+  font-size: 2.0rem;
+  text-align: justify;
+  /* padding-right: 90px; */
+}
+.ex-sp_none{
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* ------ バブル ------ */
+  body {
+  margin: 0;
+  padding: 0;
+  background: url("背景画像") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  }
+
+  .bubbles {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  }
+
+  .bubble {
+  position: absolute;
+  bottom: -40;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  animation: bubble 10s ease-in infinite;
+  }
+
+  .bubble:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  animation-duration: 6s;
+  }
+
+  .bubble:nth-child(2) {
+  left: 20%;
+  animation-duration: 3.5s;
+  }
+
+  .bubble:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  left: 30%;
+  animation-duration: 7s;
+  }
+
+  .bubble:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 67%;
+  animation-duration: 6s;
+  }
+
+  .bubble:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  animation-duration: 4.5s;
+  }
+
+  @keyframes bubble {
+    0% {
+      bottom: -100px;
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      bottom: 1000px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 786px) {
+    .ex-sp_none{
+      display: none;
+    }
+  }
+
+
+@media screen and (max-width: 787px) {
+
+  .ex-pc_none{
+    display: none;
+  }
+  /*======= main ======= */
+#container{
+  width: 100%;
+  background: linear-gradient(to bottom, #041172 0%,#024BCB 30%, #017FC2 50%,#017687 70%, #026D5B 100%);
+  background-size: 100%;
+  padding-bottom: 150px;
+}
+.ex-title_inner{
+  text-align: center;
+  padding: 300px 0 150px 0;
+}
+.ex-title{
+  font-weight: 100;
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+}
+.ex-title_inner p{
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.column{
+  flex-direction: column;
+}
+.reverse{
+  flex-direction: column-reverse;
+}
+/* --------- contents --------- */
+.ex-contents_inner{
+  margin-top: 70px;
+}
+.ex-solid_grid{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ex-contents_textarea{
+  width: 90%;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+.left{
+  padding-left: 0px;
+}
+.right{
+  padding-right: 0px;
+}
+.ex-contents_textarea h2{
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.ex-sub_title{
+  padding-top: 10px;
+  font-size: 3.0rem;
+  text-decoration: underline 1px;
+  text-underline-offset: 5px;
+}
+.ex-sub_text{
+  padding-top: 20px;
+  line-height: 2.0;
+  font-size: 1.8rem;
+
+}
+.ex-pc_none {
+  width: 100%;
+  margin-top: 50px;
+}
+
+}

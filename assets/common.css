@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box;
+}
+body {
+  color: #333; 
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* font-wight
+400(Regular)
+500(medium)
+700(Bold)
+900(Black)
+*/
+
+a {
+	color: #000;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+img {
+  width: 100%;
+	vertical-align: bottom;
+	margin-top: -1px
+}
+li{
+  list-style: none;
+}
+
+
