@@ -27,11 +27,11 @@
         <meta property="og:locale" content="ja_JP">
 
         <!-- favicon -->
-        <link rel="shortcut icon" href="assets/favicon.ico">
+        <link rel="shortcut icon" href="../assets/favicon.ico">
         <!-- apple-touchi-icon -->
-        <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+        <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
         <!-- android-touch-icon -->
-        <link rel="icon" type="image/png" href="assets/android-touch-icon.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="../assets/android-touch-icon.png" sizes="192x192">
 
         <!-- googlefonts 1-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,50 +48,30 @@
         <script src="https://kit.fontawesome.com/94d2247ce5.js" crossorigin="anonymous"></script>
 
         <!--  css  -->
-        <link rel="stylesheet" href="assets/reset.css">
-        <link rel="stylesheet" href="assets/common.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../assets/reset.css">
+        <link rel="stylesheet" href="../assets/common.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/concept.css">
 
-        <!-- メインスライド -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
-        <link rel="stylesheet" type="text/css" href="css/slide.css">
 
         <!-- 波 -->
-        <link rel="stylesheet" type="text/css" href="css/wave.css">
-
-        <!-- イベントスライド -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <link rel="stylesheet" type="text/css" href="css/event.css">
-
-
-
-
-        <script>
-            $(function () {
-                $('a[href^=#]').click(function () {
-                    var speed = 500; // スクロール速度(ミリ秒)
-                    var href = $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'html' : href);
-                    var position = target.offset().top;
-                    $('html').animate({ scrollTop: position }, speed, 'swing');
-                    return false;
-                });
-            });
-        </script>
+        <link rel="stylesheet" href="../css/wave.css">
+        <!-- text 1-1 -->
+        <link rel="stylesheet" href="../css/text.css">
     </head>
 
 
 
 
-    <body id="#top">
+    <body>
 
         <!-- ----- header ------->
         <header id="header">
             <nav class="header_inner">
 
                 <h1 class="logo_header">
-                    <a href="index.html">
-                        <img src="assets/logo.svg" alt="ロゴ">
+                    <a href="../index.html">
+                        <img src="../assets/logo.svg" alt="ロゴ">
                     </a>
                 </h1>
 
@@ -102,8 +82,8 @@
                         <span></span>
                     </div>
                     <li class="header-nav_align">
-                        <a href="concept/index.html">
-                            <div class="header-nav_icon"><img src="assets/header/header-nav-concept.svg" alt=""
+                        <a href="index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-concept.svg" alt=""
                                     width="50px" height="50px">
                             </div>
                             <p>コンセプト</p>
@@ -111,8 +91,8 @@
                     </li>
 
                     <li class="header-nav_align">
-                        <a href="exhibition/index.html">
-                            <div class="header-nav_icon"><img src="assets/header/header-nav-exhibition.svg" alt=""
+                        <a href="../exhibition/index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-exhibition.svg" alt=""
                                     width="50px" height="50px">
                             </div>
                             <p>常設展示</p>
@@ -120,34 +100,34 @@
                     </li>
 
                     <li class="header-nav_align">
-                        <a href="price/index.html">
-                            <div class="header-nav_icon"><img src="assets/header/header-nav-price.svg" alt=""
+                        <a href="../price/index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-price.svg" alt=""
                                     width="50px" height="50px">
                             </div>
                             <p>料金</p>
                         </a>
-                    </li>
 
+                    </li>
                     <li class="header-nav_align">
-                        <a href="time/index.html">
-                            <div class="header-nav_icon"><img src="assets/header/header-nav-time.svg" alt=""
+                        <a href="../time/index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-time.svg" alt=""
                                     width="50px" height="50px">
                             </div>
                             <p>営業時間</p>
                         </a>
                     </li>
                     <li class="header-nav_align">
-                        <a href="access/index.html">
-                            <div class="header-nav_icon"><img src="assets/header/header-nav-access.svg" alt=""
+                        <a href="../access/index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-access.svg" alt=""
                                     width="50px" height="50px">
                             </div>
                             <p>アクセス</p>
                         </a>
                     </li>
                     <li class="header-nav_align">
-                        <a href="guidance/index.html">
-                            <div class="header-nav_icon">
-                                <img src="assets/header/header-nav-guidance.svg" alt="" width="50px" height="50px">
+                        <a href="../guidance/index.html">
+                            <div class="header-nav_icon"><img src="../assets/header/header-nav-guidance.svg" alt=""
+                                    width="50px" height="50px">
                             </div>
                             <p>施設案内</p>
                         </a>
@@ -160,75 +140,51 @@
         <div class="sp-menu">
             <ul class="">
                 <li class="">
-                    <a href="concept/index.html">
-                        <!-- <img src="/assets/header/header-nav-concept.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../concept/index.html">
+                        <!-- <img src="../assets/header/header-nav-concept.svg" alt="" width="50px" height="50px"> -->
                         <p>コンセプト</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="exhibition/index.html">
-                        <!-- <img src="/assets/header/header-nav-exhibition.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../exhibition/index.html">
+                        <!-- <img src="../assets/header/header-nav-exhibition.svg" alt="" width="50px" height="50px"> -->
                         <p>常設展示</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="price/index.html">
-                        <!-- <img src="/assets/header/header-nav-price.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../price/index.html">
+                        <!-- <img src="../assets/header/header-nav-price.svg" alt="" width="50px" height="50px"> -->
                         <p>料金</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="time/index.html">
-                        <!-- <img src="/assets/header/header-nav-time.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../time/index.html">
+                        <!-- <img src="../assets/header/header-nav-time.svg" alt="" width="50px" height="50px"> -->
                         <p>営業時間</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="access/index.html">
-                        <!-- <img src="/assets/header/header-nav-access.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../access/index.html">
+                        <!-- <img src="../assets/header/header-nav-access.svg" alt="" width="50px" height="50px"> -->
                         <p>アクセス</p>
                     </a>
                 </li>
 
                 <li class="">
-                    <a href="guidance/index.html">
-                        <!-- <img src="/assets/header/header-nav-guidance.svg" alt="" width="50px" height="50px"> -->
+                    <a href="../guidance/index.html">
+                        <!-- <img src="../assets/header/header-nav-guidance.svg" alt="" width="50px" height="50px"> -->
                         <p>施設案内</p>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <!-------- slide -------->
-        <div id="slider">
-            <!-- js -->
-            <div class="slide-vidual"></div>
-        </div>
 
-        <!-- calendar -->
-        <div class="topInfo">
-            <div class="inner white bgBlue">
-                <div class="time">
-                    <h3 class="ttl">
-                        <span>本日の営業時間</span>
-                    </h3>
 
-                    <div class="textArea">
-                        <p class="b">9:30〜17:00</p>
-                        <p class="font-s mt5"> 最終入場 16:00まで </p>
-                        <p class="font-s mt5"> ※入場券・年間パスポートの販売は16時まで</p>
-                    </div>
-                </div>
-
-                <div class="event tCenter">
-                    <a class="todayBtn styleBtn dIb font-l" href="#">11 / 11のイベント</a>
-                </div>
-            </div>
-        </div>
 
 
 
@@ -238,269 +194,80 @@
 
         <!-- =========== main =========== -->
         <main id="container">
-            <!-------- チケット -------->
-            <div class="iziModalWrap">
-                <p class="ticketLink on">
-                    <a href="#" class="hoverAlpha iziModalOpenBtn"
-                        data-izimodal-open=".iziModal_Blank_ticketLink_Asoview"><img src="/images/tiket.png"
-                            alt="前売りチケットを購入">
-                    </a>
-                </p>
-            </div>
+            <div class="main-wrapper">
 
-            <!-------- news -------->
-            <div id="news-container">
-                <div class="news-inner">
-                    <h2 class="news-title zen-maru"><i class="fa-solid fa-circle-exclamation"></i>お知らせ</h2>
-                    <dl class="news-list">
-                        <a href="https://www.aquarium.gr.jp/info/4787/">
-                            <dt>2022.07.31（日） </dt>
-                            <dd>葛西臨海水族園の混雑予想カレンダー / congestion forecast calendar</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
+                <section class="concept-body">
 
-                    <dl class="news-list li1">
-                        <a href="https://www.aquarium.gr.jp/info/4454/">
-                            <dt>2022.07.20（水） </dt>
-                            <dd>7/21 新水槽「サンゴ礁の海」オープン！</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-
-                    <dl class="news-list li2">
-                        <a href="https://www.aquarium.gr.jp/info/4772/">
-                            <dt>2022.07.02（土） </dt>
-                            <dd>ご来園前に必ずこちらをご確認ください（施設やイベントの休止、年間パスポート取扱など）</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-
-                    <dl class="news-list li3">
-                        <a href="https://www.aquarium.gr.jp/%e6%9c%aa%e5%88%86%e9%a1%9e/4707/">
-                            <dt>2022.06.17（金） </dt>
-                            <dd>オンラインチケットをご利用の方は、入園前にチケット（QRコード）を画面に表示できるようご準備をお願いいたします</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-                </div>
-            </div>
-
-
-
-            <!--------- event --------->
-            <section id="event-bg">
-                <div class="event-container">
-
-                    <h3 class="event-title zen-maru">イベント</h3>
-                    <p class="event-sub_title">様々な年代の方が楽しめるイベントや、<br>生き物たちを間近で観ることが出来ます</p>
-                    <div class="event-inner">
-                        <div class="event-grid slider">
-
-                            <a src="" class="event-card card1">
-                                <img src="images/event/event-01.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2022/08/11(木)〜2022/08/14(日)</p>
-                                    <p class="event-card_detail">「Night of Wonder──夜の不思議の水族園」</p>
-                                </div>
-                            </a>
-                            <a src="" class="event-card card2">
-                                <img src="images/event/event-02.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2022/07/01(金)〜終了未定</p>
-                                    <p class="event-card_detail">特設展示「イキモノマヂカ」が本格オープン！</p>
-                                </div>
-                            </a>
-                            <a src="" class="event-card card3">
-                                <img src="images/event/event-03.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2022/08/07(日)〜2022/08/21(日)</p>
-                                    <p class="event-card_detail">美しいものには毒があるっ?!世にも奇妙な毒魚が君を待っている‼︎</p>
-                                </div>
-                            </a>
-
-                            <a src="" class="event-card card4">
-                                <img src="images/event/event-04.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2019/04/12(金)〜終了未定</p>
-                                    <p class="event-card_detail">触って学ぼう！「しおだまり」水槽で生き物を学ぶ</p>
-                                </div>
-                            </a>
-
-                            <a src="" class="event-card card5">
-                                <img src="images/event/event-05.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2022/10/08(土)〜2022/10/09(日)</p>
-                                    <p class="event-card_detail">聞いて学ぼう「マグロ飼育担当によるスタッフトーク」</p>
-                                </div>
-                            </a>
-                            <a src="" class="event-card card6">
-                                <img src="images/event/event-06.jpg" alt="">
-                                <div class="event-card_textarea">
-                                    <p class="event-card_time">2022/10/08(土)〜2022/10/09(日)</p>
-                                    <p class="event-card_detail">マグロ for Kids」「ペンギン for Kids」morningライブ放送</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="btn_list btn-padding">
-                            <a href="#" class="btn_arrow">イベント一覧</a>
-                        </div>
-
+                    <div class="concept-concept">
+                        <img src="images/concept.svg" alt="">
+                        <h1 class="yu-gothic blurTrigger">葛西臨海水族園のコンセプト</h1>
                     </div>
-            </section>
-            <!--------- concept /  --------->
-            <!-- <div class="wave">
-                <canvas id="waveCanvas"></canvas> -->
 
-            <!-- <div class="wave">
-                <canvas id="waveCanvas"></canvas>
-            </div> -->
+                    <div class="concept yu-gothic blurTrigger">海と人間との交流の場</div>
+                    <div class="concept-content yu-gothic blurTrigger">
+                        <p class="blurTrigger">葛西臨海水族園のコンセプトは、<br class="br-none">
+                            「海と人間との交流の場」となることを目指しています。<br class="br-none">
+                            葛西臨海水族園は、東京湾岸地区整備事業の一環として上野動物園開園100周年を記念して計画され、<br class="br-none">
+                            1989（平成元）年にオープンしました。
+                        </p>
+                        <p class="blurTrigger">
+                            水族園には、世界ではじめて外洋性の魚の群泳を実現したクロマグロの大水槽があり、<br class="br-none">
+                            1999（平成11）年には世界ではじめて水槽内での産卵に成功。<br class="br-none">
+                            2008（平成20）年、2009（平成21）年にも産卵が確認されました。
+                        </p>
 
-            <!--------- concept /  --------->
-            <!-- <div class="wave">
-                <canvas id="waveCanvas"></canvas> -->
-
-            <section class="concept-bg">
-                <div class="motif-bg motif-bg-sp">
-                    <div class="concept-inner">
-
-                        <div class="concept-image_inner">
-                            <div class="concept-text_area">
-
-                                <h3 class="concept-title zen-maru">コンセプト</h3>
-                                <p class="concept-sub_title">
-                                    葛西臨海水族園、飼育員一同の想いと
-                                    オリジナルコマーシャルのご紹介しております。
-                                </p>
-                                <div class="btn_list btn-padding">
-                                    <a href="/concept/index.html" class="btn_arrow">コンセプトを見る</a>
-                                </div>
-                            </div>
-                            <img class="concept-image_area" src="images/coex/concept-image.jpg" alt="">
-                        </div>
-
-                    </div><!-- inner -->
-
-                    <div class="exhibition-inner">
-                        <div class="exhibition-image_inner">
-                            <div class="exhibition-text_area">
-
-                                <h3 class="exhibition-title zen-maru">常設展示</h3>
-                                <p class="exhibition-sub_title">
-                                    葛西臨海水族園の生き物を
-                                    エリア毎にご紹介いたします。
-                                </p>
-                                <div class="btn_list btn-padding">
-                                    <a href="/exhibition/index.html" class="btn_arrow">常設展示一覧</a>
-                                </div>
-                            </div>
-                            <img class="exhibition-image_area" src="images/coex/exhibition-image.jpg" alt="">
-                        </div>
+                        <p class="blurTrigger">
+                            クロマグロの群泳のほか、100羽を超えるペンギンと水中を泳ぐ姿、世界各地から<br class="br-none">
+                            集められた多種多様な生き物、「東京の海」の魚たちを展示しています。<br class="br-none">
+                            さらに屋外に、池沼、渓流、そして川の様子を再現した「水辺の自然」が<br class="br-none">
+                            広がっており、さまざまな環境に生息する生き物たちと出会うことができます。
+                        </p>
                     </div>
-                </div>
-                <!-- ex inner -->
-            </section>
-            <!-- </div> -->
-
-
-
-            <section class="memory-inner">
-                <div class="memory-text_area">
-                    <h3 class="memory-title zen-maru">葛西臨海水族園メモリー</h3>
-                    <p class="memory-sub_title">
-                        葛西臨海水族園の思い出写真を<br>みんなで投稿しよう！
-                    </p>
-                    <div class="btn_list">
-                        <a href="#" class="btn_arrow">みんなの投稿を見る</a>
-                    </div>
-                </div>
-                <div class="memory-border"></div>
-                <div class="memory-photo">
-                    <a href=""><img src="images/memory/0001.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0002.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0003.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0004.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0005.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0006.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0007.jpg" alt=""></a>
-                    <a href=""><img src="images/memory/0008.jpg" alt=""></a>
-                </div>
-            </section>
-
-
-            <!----------- blog ----------->
-            <div id="second_news-container">
-                <h2 class="second_news-title zen-maru">水族園日記</h2>
-                <div class="second_news-inner">
-
-                    <dl class="second_news-list">
-                        <a href="">
-                            <dt>2022.07.31（日）</dt>
-                            <dd>潮風よ、どんと来い！ 海浜植物ってすごい</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-
-                    <dl class="second_news-list li1">
-                        <a href="">
-                            <dt>2022.07.20（水）</dt>
-                            <dd>オウサマペンギンの「クルル」が死亡しました</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-                    <dl class="second_news-list li3">
-                        <a href="">
-                            <dt>2022.07.14（金）</dt>
-                            <dd>7/21 新水槽「サンゴ礁の海」オープン！</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-                    <dl class="second_news-list li2">
-                        <a href="">
-                            <dt>2022.07.02（土）</dt>
-                            <dd>ジンゴロウヤドカリとイソギンチャクのお互い得するくらしかた</dd>
-                            <div class="border-bottom"></div>
-                        </a>
-                    </dl>
-
-                </div>
-                <div class="btn_list btn-margin ">
-                    <a href="#" class="btn_arrow">イベント一覧</a>
-                </div>
+                </section>
             </div>
 
+            <section class="concept-bg"></section>
+        </main>
 
 
-            <!----------- banner ----------->
-            <div class="banner-inner">
-                <div class="banner-grid">
-                    <a href="https://www.youtube.com/channel/UCanUP77zPKOr3K0tLXNmKGg" target="_blank">
-                        <img src="images/banner/banner_01.jpg" alt="">
-                    </a>
-                    <a href="https://twitter.com/kasaisuizokuen" target="_blank">
-                        <img src="images/banner/banner_02.jpg" alt="">
-                    </a>
-                    <a href="" target="_blank">
-                        <img src="images/banner/banner_03.jpg" alt="">
-                    </a>
-                </div>
+        <!----------- banner ----------->
+        <div class="commercial-inner yu-gothic">
+            <h2 class="blurTrigger">葛西臨海水族園のオリジナルコマーシャル</h2>
+            <p class="blurTrigger">水族園の見どころや、スタッフしか知らない豆知識、ちょっとした注意事項やツッコミ<br class="br-none">
+                どころについて、レトロな雰囲気のCMで楽しくお伝えします。</p>
+
+            <iframe src="https://www.youtube.com/embed/6kaAM03IcSU" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+        <div class="banner-inner">
+            <div class="banner-grid">
+                <a href="https://www.youtube.com/channel/UCanUP77zPKOr3K0tLXNmKGg" target="_blank">
+                    <img src="images/banner/banner_01.jpg" alt="">
+                </a>
+                <a href="https://twitter.com/kasaisuizokuen" target="_blank">
+                    <img src="images/banner/banner_02.jpg" alt="">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/banner/banner_03.jpg" alt="">
+                </a>
             </div>
+        </div>
 
-
-
-
-            <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑ top ↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
-            <div class="top-page">
-                <a href="#" class="top-page_arrow"></a>
-                <p>ページ先頭へ</p>
-            </div>
-
+        <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑ top ↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+        <div class="top-page">
+            <a href="#top" class="top-page_arrow"></a>
+            <p>ページ先頭へ</p>
+        </div>
 
         </main>
         <div class="wave">
             <canvas id="waveCanvas"></canvas>
         </div>
-
 
 
         <!------------ footer ------------>
@@ -509,7 +276,7 @@
                 <!-- <div class=""> -->
                 <div class="footer-grid">
                     <div class="footer-address_inner">
-                        <a href="#"></a><img class="footer-logo" src="images/footer/logo.svg" alt=""></a>
+                        <a href="#"></a><img class="footer-logo" src="../images/footer/logo.svg" alt=""></a>
                         <p class="footer-address">
                             〒134-8587 東京都江戸川区臨海町６丁目２−３<br>
                             TEL：03-3869-5152 / FAX：03-3869-5155<br>
@@ -555,20 +322,9 @@
             </section>
         </footer>
 
-        <!-- mainslide -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-        <script src="js/slide.js"></script>
 
         <!-- wave -->
-        <script src="js/script.js"></script>
-
-        <!-- event_slide -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="js/event.js"></script>
+        <script src="../js/script.js"></script>
 
         <!-- ハンバーガー -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -577,9 +333,18 @@
         <!-- hambuger自作 -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="js/ham.js"></script>
+        <script src="../js/ham.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+        <!-- jq -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+
+        <!-- text 1-1-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="../js/text.js"></script>
     </body>
 
 </html>
